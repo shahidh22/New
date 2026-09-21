@@ -1,4 +1,5 @@
-name: CI
+
+name: Basic CI Workflow
 
 on:
   push:
@@ -14,8 +15,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run tests
-        run: echo "Running tests..."
+      - name: Display Message
+        run: echo "GitHub Actions is working!"
 
-      - name: Build
-        run: echo "Building project..."
+      - name: Display Student Name
+        run: echo "Hello Mohamed Shahid!"
+
+      - name: Run Tests
+        run: echo "All tests completed successfully!"
